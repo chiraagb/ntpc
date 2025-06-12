@@ -47,6 +47,12 @@
       line-height: 1.7;
     }
 
+    .section ul {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      padding-left: 1.5rem;
+    }
+
     .cta {
       background: #004080;
       color: white;
@@ -59,7 +65,7 @@
       font-size: 1.8rem;
     }
 
-    .cta button {
+    .cta a {
       background: #ffffff;
       color: #004080;
       border: none;
@@ -68,10 +74,22 @@
       cursor: pointer;
       border-radius: 5px;
       transition: background 0.3s ease;
+      text-decoration: none;
     }
 
-    .cta button:hover {
+    .cta a:hover {
       background: #e6e6e6;
+    }
+
+    .chatbot-frame {
+      width: 100%;
+      max-width: 1000px;
+      height: 700px;
+      margin: 3rem auto;
+      display: block;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     footer {
@@ -94,6 +112,13 @@
     <h1>AviaraConnect X NTPC</h1>
     <p>AI-Powered Compliance Meets India's Energy Giant</p>
   </header>
+
+
+   <!-- ✅ Embedded Chatbot via iframe -->
+  <iframe
+    class="chatbot-frame"
+    src="https://red-cliff-0e5964a10.4.azurestaticapps.net/chat?org_id=ntpc-s8-a3f9c2d1e0&bot=5"
+  ></iframe>
 
   <div class="section">
     <h2>⚡ Transforming Compliance for a Greener Tomorrow</h2>
@@ -120,15 +145,19 @@
     </p>
   </div>
 
+ 
+
   <div class="cta">
     <h3>Ready to see the future of energy compliance?</h3>
-    <a href="https://aviaralabs.com" style="text-decoration: none; color: #e6e6e6;" target="_blank">Contact AviaraConnect</a>
+    <a href="https://aviaralabs.com" target="_blank">Contact AviaraConnect</a>
   </div>
 
   <footer>
     &copy; 2025 AviaraConnect & NTPC Limited. All rights reserved.
   </footer>
 
-  <script async src="https://ambitious-hill-02542e400.6.azurestaticapps.net/widget.js" data-orgid="ntpc-s8-a3f9c2d1e0" data-botid='5'></script>
+  <!-- ✅ Keep original widget script as well -->
+  <script async src="https://ambitious-hill-02542e400.6.azurestaticapps.net/widget.js" data-orgid="ntpc-s8-a3f9c2d1e0" data-botid="5"></script>
+
 </body>
 </html>
